@@ -52,3 +52,9 @@ int _printf(const char *format, ...)
 va_end(args);
 return (charCount);
 }
+
+int main(void)
+{
+	_printf("Hello, %s! The character is %c and here's a %%.\n", "world", 'A');
+return (0);
+}
