@@ -1,9 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-#include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <unistd.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -43,6 +42,7 @@ typedef struct fmt fmt_t;
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
+
 /****************** FUNCTIONS ******************/
 
 /* Funtions to print chars and strings */
@@ -115,3 +115,5 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
+
+
