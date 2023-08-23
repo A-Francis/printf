@@ -1,16 +1,16 @@
 #include "main.h"
 
-
+/************************* PRINT CHAR *************************/
 
 /**
  * print_char - Prints a char
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
- * @flags:  calculates active flags
+ * @flags:  Calculates active flags
  * @width: Width
  * @precision: Precision specification
- * @size: size specifier
- * Return: Number of chars
+ * @size: Size specifier
+ * Return: Number of chars printed
  */
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -80,7 +80,7 @@ int print_string(va_list types, char buffer[],
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get width
+ * @width: get width.
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
@@ -143,14 +143,14 @@ int print_int(va_list types, char buffer[],
 
 /************************* PRINT BINARY *************************/
 /**
- * print_binary - Prints unsigned number
+ * print_binary - Prints an unsigned number
  * @types: Lista of arguments
- * @buffer: Buffer array
+ * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get width
- * @precision: precision specification
- * @size: size specifier
- * Return: Numbers of char to print
+ * @width: get width.
+ * @precision: Precision specification
+ * @size: Size specifier
+ * Return: Numbers of char printed.
  */
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -186,3 +186,4 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
+
